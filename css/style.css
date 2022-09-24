@@ -48,6 +48,7 @@ body{
     position: fixed;
     margin-left: 50%;
     left: -50vw;
+    text-align: center;
 }
 .background_pic img{
     width: 100vw;
@@ -123,12 +124,14 @@ body{
     margin-left: 50%;
     left: -5vh;
     position: absolute;
+
 }
 .avator_pic img{
     border: rgba(41,40,44) solid;
     height: 10vh;
     width: 10vh;
     border-radius: 50px;
+    box-shadow: 3px 3px 3px black;
 }
 .avator_pic img:hover{
     border: white solid;
@@ -170,6 +173,10 @@ body{
     background: rgba(41,40,44,0.5);
     z-index: 0;
     align-items: center;
+    box-shadow: 10px 10px 10px #29282c;
+}
+.detail:hover{
+    background: rgba(41,40,44,0.8);
 }
 .tittle1{
     /*background-color: white;*/

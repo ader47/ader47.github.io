@@ -58,7 +58,7 @@
     </div>
 <!--详细介绍-->
 <section>
-    <div class="detail">
+    <div class="detail" id="bio_con">
         <a href="#" id="aboutme"></a>
         <div class="tittle1"><h1>About Me</h1></div>
         <div class="pic">
@@ -67,7 +67,7 @@
         <div class="about_text" >
             <img src="images/Note.png">
             <div class="text">
-                 <p >    刘峰，男，2000年4月23日出生，故乡山西太原。</p>
+                 <p >刘峰，男，2000年4月23日出生，故乡山西太原。</p>
                 <p >目前就读于
                     <a  href="https://sai.sysu.edu.cn/">中山大学人工智能学院</a>
                     ，跟随
@@ -90,7 +90,7 @@
 <!--Cat-->
 <a href="#" id="mycat"></a>
 <section>
-    <div class="detail">
+    <div class="detail" id="cat_con">
         <div class="tittle1"><h1>This is my cat.</h1></div>
         <div class="pic_cat">
             <img src="images/MyCat.jpg" alt="No Pic" title="This is my cat">
@@ -99,9 +99,9 @@
     </div>
 </section>
 <!--Contact-->
-<section class="contact_con">
+<section>
     <a href="#contact" id="contact"></a>
-    <div class="detail">
+    <div class="detail" id="contact_con">
         <div class="tittle1"><h1>Contact Me</h1></div>
         <div class="contact_method">
             <div class="email">
@@ -145,6 +145,9 @@
         $(window).scroll(function (){
             var box01 = document.getElementById('welcome_text');
             var guide_text=document.getElementById('guide_text');
+            var bio_con=document.getElementById('bio_con');
+            var cat_con=document.getElementById('cat_con');
+            var contact_con=document.getElementById('contact_con');
             var scropTop=parseInt($(this).scrollTop());
             if (scropTop > window.innerHeight/2) {
                 box01.title = 'Home';
@@ -158,13 +161,28 @@
                 guide_text.innerHTML=''
             }
             if (scropTop>window.innerHeight*0.9 && scropTop<2*window.innerHeight*0.9){
+                bio_con.style.background='rgba(41,40,44,0.8)';
                 guide_text.innerHTML='About Me';
+            }
+            else
+            {
+                bio_con.style.background='rgba(41,40,44,0.5)';
             }
             if (scropTop>2*window.innerHeight*0.9&& scropTop<3*window.innerHeight*0.9){
                 guide_text.innerHTML='My cat';
+                cat_con.style.background='rgba(41,40,44,0.8)';
+            }
+            else
+            {
+                cat_con.style.background='rgba(41,40,44,0.5)';
             }
             if (scropTop>3*window.innerHeight*0.9){
                 guide_text.innerHTML='Contact';
+                contact_con.style.background='rgba(41,40,44,0.8)';
+            }
+            else
+            {
+                contact_con.style.background='rgba(41,40,44,0.5)';
             }
         });
     });
