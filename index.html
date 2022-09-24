@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes" />
     <meta charset="UTF-8">
     <title>刘峰‘s homepage</title>
     <link rel="stylesheet" href="css/style.css"></link>
@@ -58,8 +58,8 @@
     </div>
 <!--详细介绍-->
 <section>
-    <a href="#" id="aboutme"></a>
     <div class="detail">
+        <a href="#" id="aboutme"></a>
         <div class="tittle1"><h1>About Me</h1></div>
         <div class="pic">
             <img src="images/Me1.jpg" alt="No Pic" title="This is me">
@@ -133,6 +133,10 @@
 </html>
 
 <script>
+    $(window).on('beforeunload',function () {
+        $(window).scrollTop(0);
+    });
+
     $(window).on("load",function (){
        $(".loading").fadeOut("slow")
     });
@@ -164,6 +168,4 @@
             }
         });
     });
-
-
 </script>
