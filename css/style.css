@@ -117,13 +117,32 @@ body{
     color: gray;
 }
 /*简介*/
+.avator_pic{
+    border-radius: 50px;
+    margin-top: 25vh;
+    margin-left: 50%;
+    left: -5vh;
+    position: absolute;
+}
+.avator_pic img{
+    border: rgba(41,40,44) solid;
+    height: 10vh;
+    width: 10vh;
+    border-radius: 50px;
+}
+.avator_pic img:hover{
+    border: white solid;
+    height: 10vh;
+    width: 10vh;
+    border-radius: 50px;
+}
 .brief{
     height: 60px;
     width: 400px;
     position: absolute;
     margin-left: 50%;
     left: -200px;
-    margin-top: 40vh;
+    margin-top: 39vh;
     z-index: 1;
 }
 
@@ -150,6 +169,7 @@ body{
     height: 90vh;
     background: rgba(41,40,44,0.5);
     z-index: 0;
+    align-items: center;
 }
 .tittle1{
     /*background-color: white;*/
@@ -159,39 +179,40 @@ body{
 }
 .pic{
     position: relative;
-    margin-right: 50px;
+    margin-right: 3vw;
+    margin-top: 12vh;
+    float: right;
 }
 .pic img{
-    width: 30vw;
-    float: right;
-    margin-top: 70px;
+    width: 25vw;
     z-index: 0;
 }
 
 .about_text{
-    margin-left: 50px;
-    margin-top: 50px;
+    margin-left: 3vw;
+    margin-top: 6vh;
     color: black;
     position: relative;
     z-index: 0;
     /*border:white solid;*/
-    height: 600px;
-    width: 580px;
+    height: 30vh;
+    width: 30vw;
 }
 .about_text img{
     position: absolute;
-    height: 70vh;
+    width: 40vw;
+    /*height: 70vh;*/
     float: left;
     z-index: 0;
 }
 
 .about_text .text {
-    width: 400px;
-    height: 300px;
-    /*border:greenyellow solid;*/
+    color: grey;
+    height: 30vh;
+    width: 25vw;
     position: absolute;
-    margin-top: 150px;
-    margin-left: 100px;
+    margin-top: 10vh;
+    margin-left: 8vw;
     z-index: 0;
 }
 .about_text .text p,h3{
@@ -205,13 +226,13 @@ body{
 .about_text a:hover{
     color: white;
 }
-
+.pic_cat{
+    text-align: center;
+    width: 100%;
+}
 .pic_cat img{
-    position: relative;
-    margin-left: 50%;
-    margin-top: 5vh;
     left: -15vw;
-    width: 30vw;
+    height: 60vh;
 }
 
 .about_cat{
