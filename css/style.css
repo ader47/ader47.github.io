@@ -1,0 +1,321 @@
+/*loading*/
+.loading{width:100%; height: 100%;position: fixed;top:0;left: 0;z-index: 100;background: rgba(41,40,44,10);}
+.loading .pic{
+    width: 64px;
+    height: 64px;
+    /* background: url(images/loading.gif); */
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left:0;
+    right:0;
+    margin: auto}
+
+.loading .pic i{
+    display: block;
+    float: left;
+    width: 6px;
+    height: 50px;
+    background: #399;
+    margin: 0 2px;
+    transform: scaleY(0.4);
+    animation: load 1.2s infinite;
+}
+.loading .pic i:nth-child(1){animation-delay:0.1s }
+.loading .pic i:nth-child(2){animation-delay:0.2s }
+.loading .pic i:nth-child(3){animation-delay:0.3s }
+.loading .pic i:nth-child(4){animation-delay: 0.4s}
+.loading .pic i:nth-child(5){animation-delay:0.5s }
+
+@keyframes load{
+    0%,40%,100%{transform: scaleY(0.4)}
+    20%{transform:scaleY(1) }
+}
+
+
+/*main*/
+body{
+    margin: 0;
+    background-color: rgba(41,40,44,10);
+    opacity: inherit;
+}
+#home{
+    /*height: 820px;*/
+    height: 100vh;
+}
+.background_pic{
+    z-index: -1;
+    position: fixed;
+    margin-left: 50%;
+    left: -50vw;
+}
+.background_pic img{
+    width: 100vw;
+}
+/*导航栏*/
+.meau{
+    padding-top: 16px;
+    padding-right: 16px;
+    padding-bottom: 4px;
+    padding-left: 16px;
+    height: 50px;
+    position: fixed;
+    z-index: 1;
+    background: #29282c;
+    width: 100%;
+}
+.logo{
+    height: 45px;
+    width: 60px;
+    position: absolute;
+    /*background-color: red;*/
+
+    /*border:white solid;*/
+    border-radius: 5px;
+    z-index: 0;
+}
+.guide_show{
+    width: 300px;
+    height: 66px;
+    position: absolute;
+    margin-top: -16px;
+    margin-left: 60px;
+    color: white;
+}
+#welcome{
+    width: 300px;
+    height: 66px;
+    position: absolute;
+    margin-top: -16px;
+    margin-left: 50%;
+    left:-166px;
+    text-align: center;
+    color: white;
+    float: left;
+}
+
+.logo img{
+    height: 45px;
+}
+
+.guide{
+    width: 400px;
+    height: 45px;
+    float: right;
+    color: white;
+    font-weight: bold;
+}
+.guide a{
+    text-decoration: none;
+    float: left;
+    margin-left: 50px;
+    margin-top: 10px;
+    color: white;
+}
+.guide a:hover{
+    text-decoration: underline;
+    color: gray;
+}
+/*简介*/
+.brief{
+    height: 60px;
+    width: 400px;
+    position: absolute;
+    margin-left: 50%;
+    left: -200px;
+    margin-top: 40vh;
+    z-index: 1;
+}
+
+.interests{
+    font-size: inherit;
+    font-family: Monospace;
+    font-weight: bold;
+}
+.brief a{
+    text-align: center;
+    line-height: 5px;
+    color: black;
+    text-decoration: none;
+}
+.brief a:hover{
+    color: white;
+}
+/*介绍*/
+.detail{
+    margin-left: 50%;
+    left: -40vw;
+    position: relative;
+    width: 80vw;
+    height: 90vh;
+    background: rgba(41,40,44,0.5);
+    z-index: 0;
+}
+.tittle1{
+    /*background-color: white;*/
+    color: white;
+    margin-top: 0;
+    margin-left: 10px;
+}
+.pic{
+    position: relative;
+    margin-right: 50px;
+}
+.pic img{
+    width: 30vw;
+    float: right;
+    margin-top: 70px;
+    z-index: 0;
+}
+
+.about_text{
+    margin-left: 50px;
+    margin-top: 50px;
+    color: black;
+    position: relative;
+    z-index: 0;
+    /*border:white solid;*/
+    height: 600px;
+    width: 580px;
+}
+.about_text img{
+    position: absolute;
+    height: 70vh;
+    float: left;
+    z-index: 0;
+}
+
+.about_text .text {
+    width: 400px;
+    height: 300px;
+    /*border:greenyellow solid;*/
+    position: absolute;
+    margin-top: 150px;
+    margin-left: 100px;
+    z-index: 0;
+}
+.about_text .text p,h3{
+    text-indent: 2em;
+    line-height: 25px;
+}
+.about_text a{
+    text-decoration: none;
+    color: blue;
+}
+.about_text a:hover{
+    color: white;
+}
+
+.pic_cat img{
+    position: relative;
+    margin-left: 50%;
+    margin-top: 5vh;
+    left: -15vw;
+    width: 30vw;
+}
+
+.about_cat{
+    width: 100%;
+    position: absolute;
+    text-align: center;
+}
+.about_cat a{
+    font-family: Bahnschrift ;
+    color: white;
+    text-decoration: none;
+}
+.about_cat a:hover{
+    color: pink;
+}
+/*contact*/
+.contact_con .detail{
+    vertical-align: middle;
+}
+
+.email{
+    float: left;
+    position: relative;
+    margin-left: 10vw;
+    margin-top: 20vh;
+    text-align: center;
+}
+.wechat{
+    height: 22vh;
+    width: 22vh;
+    float: left;
+    margin-top: 20vh;
+    position: absolute;
+    margin-left: 50%;
+    left: -11vh;
+    text-align: center;
+}
+.github{
+    height: 22vh;
+    width:  22vh;
+    margin-top: 20vh;
+    float: right;
+    margin-right: 10vw;
+    text-align: center;
+}
+.contact_method img{
+    height: 10vw;
+    width: 10vw;
+}
+.contact_method svg{
+    height: 10vw;
+    width: 10vw;
+}
+.contact_method a{
+    text-decoration: none;
+    color: white;
+}
+
+.email a:hover{
+    color: cadetblue;
+}
+
+.wechat a:hover{
+    color: cadetblue;
+}
+
+.github a:hover{
+    color: cadetblue;
+}
+
+.end_say{
+    width: 500px;
+    float: left;
+    text-align: center;
+    position: absolute;
+    margin-top: 70vh;
+    margin-left: 50%;
+    left: -250px;
+}
+
+.end_say a{
+    font-weight: 900;
+    font-size: larger;
+    font-family: Bahnschrift;
+    text-decoration: none;
+    color: black;
+}
+.end_say a:hover{
+    color: white;
+}
+
+/*footer*/
+.footer{
+    height: 50px;
+    text-align: center;
+    border-top: gray dashed;
+    color: gainsboro;
+    font-family: Bahnschrift ;
+}
+.footer a{
+    color: white;
+    font-family: Bahnschrift ;
+}
+.footer a:hover{
+    color: cadetblue;
+    font-family: Bahnschrift ;
+}
