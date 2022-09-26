@@ -261,6 +261,7 @@ body{
     margin-left: 50%;
     left: -40vw;
     position: relative;
+    /*position: relative;*/
     width: 80vw;
     height: 30vh;
     background: rgba(41,40,44,0.5);
@@ -319,26 +320,26 @@ body{
     color: cadetblue;
 }
 
-.end_say{
-    width: 500px;
-    float: left;
-    text-align: center;
-    position: absolute;
-    margin-top: 70vh;
-    margin-left: 50%;
-    left: -250px;
-}
+/*.end_say{*/
+/*    width: 500px;*/
+/*    float: left;*/
+/*    text-align: center;*/
+/*    position: absolute;*/
+/*    margin-top: 70vh;*/
+/*    margin-left: 50%;*/
+/*    left: -250px;*/
+/*}*/
 
-.end_say a{
-    font-weight: 900;
-    font-size: larger;
-    font-family: Bahnschrift;
-    text-decoration: none;
-    color: black;
-}
-.end_say a:hover{
-    color: white;
-}
+/*.end_say a{*/
+/*    font-weight: 900;*/
+/*    font-size: larger;*/
+/*    font-family: Bahnschrift;*/
+/*    text-decoration: none;*/
+/*    color: black;*/
+/*}*/
+/*.end_say a:hover{*/
+/*    color: white;*/
+/*}*/
 
 /*footer*/
 .footer{
