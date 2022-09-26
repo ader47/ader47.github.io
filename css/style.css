@@ -262,12 +262,9 @@ body{
     margin-left: 50%;
     left: -40vw;
     position: relative;
-    /*position: relative;*/
     width: 80vw;
     padding-bottom: 2vh;
     background: rgba(41,40,44,0.5);
-    z-index: 0;
-    align-items: center;
     box-shadow: 10px 10px 10px #29282c;
     border-radius: 10px;
 }
