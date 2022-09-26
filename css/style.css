@@ -124,7 +124,6 @@ body{
     margin-left: 50%;
     left: -5vh;
     position: absolute;
-
 }
 .avator_pic img{
     border: rgba(41,40,44) solid;
@@ -185,47 +184,44 @@ body{
     margin-top: 0;
     margin-left: 10px;
 }
-.pic{
-    position: relative;
-    margin-right: 3vw;
-    margin-top: 12vh;
-    float: right;
+.S1{
+    text-align: center;
+    position: absolute;
 }
 .pic img{
+    border: #29282c solid;
     width: 25vw;
-    z-index: 0;
 }
-
-.about_text{
-    margin-left: 3vw;
-    margin-top: 6vh;
-    color: black;
-    position: relative;
-    z-index: 0;
-    /*border:white solid;*/
-    height: 30vh;
-    width: 30vw;
-}
-.about_text img{
-    position: absolute;
-    width: 40vw;
-    /*height: 70vh;*/
+.pic{
+    width: 25vw;
     float: left;
-    z-index: 0;
-}
-
-.about_text .text {
-    color: grey;
-    height: 30vh;
-    width: 25vw;
-    position: absolute;
     margin-top: 10vh;
     margin-left: 8vw;
-    z-index: 0;
 }
+.about_text{
+    margin-top: 3vh;
+    float: right;
+    width: 25vw;
+    height: 50vh;
+}
+.about_text img{
+    float: right;
+    width: 40vw;
+    position: absolute;
+    left: 40vw;
+}
+.text{
+    text-align: left;
+    position: absolute;
+    width: 24vw;
+    margin-top: 12vh;
+    margin-left: 16vw;
+}
+
+
 .about_text .text p,h3{
     text-indent: 2em;
-    line-height: 25px;
+    margin: 0 auto;
 }
 .about_text a{
     text-decoration: none;
@@ -235,6 +231,7 @@ body{
     color: white;
 }
 .pic_cat{
+    margin-top: 10vh;
     text-align: center;
     width: 100%;
 }
@@ -245,6 +242,7 @@ body{
 
 .about_cat{
     width: 100%;
+    height: 5vh;
     position: absolute;
     text-align: center;
 }
@@ -257,42 +255,52 @@ body{
     color: pink;
 }
 /*contact*/
-.contact_con .detail{
-    vertical-align: middle;
-}
 
+.contact_con{
+    margin-top: 3vh;
+    margin-left: 50%;
+    left: -40vw;
+    position: relative;
+    width: 80vw;
+    height: 30vh;
+    background: rgba(41,40,44,0.5);
+    z-index: 0;
+    align-items: center;
+    box-shadow: 10px 10px 10px #29282c;
+    border-radius: 10px;
+}
 .email{
     float: left;
     position: relative;
-    margin-left: 10vw;
-    margin-top: 20vh;
     text-align: center;
+    margin-left: 5vw;
 }
 .wechat{
     height: 22vh;
     width: 22vh;
-    float: left;
-    margin-top: 20vh;
     position: absolute;
     margin-left: 50%;
     left: -11vh;
     text-align: center;
 }
 .github{
+    float: right;
     height: 22vh;
     width:  22vh;
-    margin-top: 20vh;
-    float: right;
-    margin-right: 10vw;
     text-align: center;
+    margin-right: 5vw;
+}
+.contact_method{
+    text-align: center;
+    margin-top: 6vh;
 }
 .contact_method img{
-    height: 10vw;
-    width: 10vw;
+    height: 7vw;
+    width: 7vw;
 }
 .contact_method svg{
-    height: 10vw;
-    width: 10vw;
+    height: 7vw;
+    width: 7vw;
 }
 .contact_method a{
     text-decoration: none;

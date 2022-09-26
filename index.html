@@ -61,29 +61,30 @@
     <div class="detail" id="bio_con">
         <a href="#" id="aboutme"></a>
         <div class="tittle1"><h1>About Me</h1></div>
-        <div class="pic">
-            <img src="images/Me1.jpg" alt="No Pic" title="This is me">
-        </div>
-        <div class="about_text" >
-            <img src="images/Note.png">
-            <div class="text">
-                 <p >刘峰，男，2000年4月23日出生，故乡山西太原。</p>
-                <p >目前就读于
-                    <a  href="https://sai.sysu.edu.cn/">中山大学人工智能学院</a>
-                    ，跟随
-                    <a  href="https://sai.sysu.edu.cn/teacher/zljs/1386479.htm">常晓斌</a>
-                    老师进行机器学习与计算机视觉的研究。
-                </p>
-                <h3>我的爱好有</h3>
-                <ul>
-                    <li>学习</li>
-                    <li>写代码</li>
-                    <li>骑车</li>
-                    <li>跑步</li>
-                    <li>爬山</li>
-                </ul>
+        <div class="S1">
+            <div class="pic">
+                <img src="images/Me1.jpg" alt="No Pic" title="This is me">
             </div>
-
+            <div class="about_text" >
+                <img src="images/Note.png">
+                <div class="text" id="text1">
+                     <p >刘峰，男，2000年4月23日出生，故乡山西太原。</p>
+                    <p >目前就读于
+                        <a  href="https://sai.sysu.edu.cn/">中山大学人工智能学院</a>
+                        ，跟随
+                        <a  href="https://sai.sysu.edu.cn/teacher/zljs/1386479.htm">常晓斌</a>
+                        老师进行机器学习与计算机视觉的研究。
+                    </p>
+                    <h3>我的爱好有</h3>
+                    <ul>
+                        <li>学习</li>
+                        <li>写代码</li>
+                        <li>骑车</li>
+                        <li>跑步</li>
+                        <li>爬山</li>
+                    </ul>
+                </div>
+        </div>
         </div>
     </div>
 </section>
@@ -101,7 +102,7 @@
 <!--Contact-->
 <section>
     <a href="#contact" id="contact"></a>
-    <div class="detail" id="contact_con">
+    <div class="contact_con" id="contact_con_id">
         <div class="tittle1"><h1>Contact Me</h1></div>
         <div class="contact_method">
             <div class="email">
@@ -120,7 +121,7 @@
             </div>
         </div>
         <a href="#endsay" id="endsay"></a>
-        <div class="end_say"><a href="#endsay"><h1>--------------END--------------</h1></a></div>
+<!--        <div class="end_say"><a href="#endsay"><h1>&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;END&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;</h1></a></div>-->
     </div>
 </section>
 
@@ -141,13 +142,14 @@
        $(".loading").fadeOut("slow")
     });
 
+
     $(function (){
         $(window).scroll(function (){
             var box01 = document.getElementById('welcome_text');
             var guide_text=document.getElementById('guide_text');
             var bio_con=document.getElementById('bio_con');
             var cat_con=document.getElementById('cat_con');
-            var contact_con=document.getElementById('contact_con');
+            var contact_con=document.getElementById('contact_con_id');
             var scropTop=parseInt($(this).scrollTop());
             if (scropTop > window.innerHeight/2) {
                 box01.title = 'Home';
