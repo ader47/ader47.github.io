@@ -100,7 +100,7 @@ body{
 }
 
 .guide{
-    width: 400px;
+    width: 450px;
     height: 45px;
     float: right;
     color: white;
@@ -179,6 +179,54 @@ body{
 .detail:hover{
     background: rgba(41,40,44,0.8);
 }
+
+.project_detail{
+    margin-left: 50%;
+    left: -40vw;
+    position: relative;
+    width: 80vw;
+    background: rgba(41,40,44,0.5);
+    z-index: 0;
+    align-items: center;
+    box-shadow: 10px 10px 10px #29282c;
+    border-radius: 10px;
+    padding-bottom: 2vh;
+
+}
+
+.project_detail:hover{
+    background: rgba(41,40,44,0.8);
+}
+
+.pre{
+    text-align: center;
+}
+
+.pre img{
+    width: 50vw;
+}
+.about_project{
+    margin-left: 50%;
+    left: -40%;
+
+    width: 80%;
+    position: relative;
+    text-align: left;
+    text-indent:2em;
+    font-family: Bahnschrift ;
+    color: white;
+    text-decoration: none;
+}
+.about_project a{
+    font-family: Bahnschrift ;
+    color: gray;
+    text-decoration: none;
+}
+.about_project  a:hover{
+    color: pink;
+}
+
+
 .tittle1{
     /*background-color: white;*/
     color: white;
@@ -244,7 +292,7 @@ body{
 .about_cat{
     width: 100%;
     height: 5vh;
-    position: absolute;
+    position: relative;
     text-align: center;
 }
 .about_cat a{

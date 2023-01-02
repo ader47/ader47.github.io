@@ -37,6 +37,7 @@
         <div class="guide">
             <div><a href="#aboutme">Bio</a></div>
             <div><a href="#mycat">My Cat</a></div>
+            <div><a href="#Project">Project</a></div>
             <div><a href="#contact">Contact Me</a></div>
         </div>
     </nav>
@@ -99,6 +100,59 @@
         <div class="about_cat"><a href="#mycat">She was only six months old.&#128512;</a></div>
     </div>
 </section>
+
+<a href="#" id="Project"></a>
+
+<section>
+    <div class="project_detail" id="pre">
+
+        <div class="tittle1"><h1>Project</h1></div>
+
+
+        <div class="about_project">
+            <p>
+            在中大的人机交互课程中，我们小组设计开发了一个校园互助配送微信小程序🧋，为需要外卖入户服务的用户和愿意配送的用户提供一个平台。
+            小程序做的比较粗糙，虽然部分功能还未实现，但总体上Demo出了下单、筛选订单、接单、结单几大基本功能。
+            <p>小程序源码已上传至<a href="https://github.com/luoh226/Campus-food-delivery-wechat-mini-program">GitHub</a>。 下面几张图片是目前做出的效果图。
+        </div>
+
+        <div class="pre">
+            <img src="images/miniprogram.jpg" alt="No Pic" title="This is my cat" width="1000">
+        </div>
+
+        <div class="about_project">
+            <p>这是我们在开发过程中的图片，
+        </div>
+
+        <div class="pre">
+            <img src="images/minprogram_dev.png" alt="No Pic" title="This is my cat" width="1000">
+        </div>
+        <div class="about_project">
+            <p>我们还为小程序设计了数据库，
+        </div>
+        <div class="pre">
+            <img src="images/dataset.png" alt="No Pic" title="This is my cat" width="1000">
+        </div>
+
+        <div class="about_project">
+            <p> 我们使用的是官方的微信开发者工具进行开发的👨‍💻，该工具能根据当前项目代码在手机微信上实时显示，调试起来非常方便， 非常推荐使用这款官方工具进行开发：
+                <a href="https://developers.weixin.qq.com/miniprogram/dev/devtools/download.html">下载链接</a>。
+
+            <p> 此外，我们参考的文档大部分来自：<a href="https://developers.weixin.qq.com/miniprogram/dev/component/">微信开放文档</a> ，在文档里有各种组件的详细教程以及模板代码，并且可以一键将组件的Demo在微信开发者工具里显示。
+
+            <p> 最后，非常感谢彭振辉老师在这门课程里教授我们知识， 并对我们的项目提出关键的指导😊！后续会把老师提出的隐私因素考虑进去改进小程序。
+        </div>
+
+
+
+
+
+    </div>
+</section>
+
+
+
+
 <!--Contact-->
 <section>
     <a href="#contact" id="contact"></a>
@@ -209,7 +263,7 @@
                 cat_con.style.background='rgba(41,40,44,0.5)';
             }
             if (scropTop>3*window.innerHeight*0.9){
-                guide_text.innerHTML='Contact';
+                guide_text.innerHTML='Project';
                 contact_con.style.background='rgba(41,40,44,0.8)';
             }
             else
